@@ -1,0 +1,158 @@
+gene_symbol,molecule_chembl_id,action_type,mechanism_of_action
+KCNJ11,CHEMBL181,OPENER,"Potassium channel, inwardly rectifying, subfamily J, member 11 opener"
+GCK,CHEMBL3219124,ACTIVATOR,Hexokinase type IV activator
+GCK,CHEMBL4297508,ACTIVATOR,Hexokinase type IV activator
+GCK,CHEMBL2165615,ACTIVATOR,Hexokinase type IV activator
+GCK,CHEMBL2165620,ACTIVATOR,Hexokinase type IV activator
+GCK,CHEMBL4297302,ACTIVATOR,Hexokinase type IV activator
+GCK,CHEMBL4297399,ACTIVATOR,Hexokinase type IV activator
+PPARG,CHEMBL1715,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL843,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL408,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL1200760,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL704,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL1201013,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL3545295,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL3545176,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL5314405,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL93747,MODULATOR,Peroxisome proliferator-activated receptor gamma modulator
+PPARG,CHEMBL107367,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL181954,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL5095027,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL490029,MODULATOR,Peroxisome proliferator-activated receptor gamma modulator
+PPARG,CHEMBL3545020,MODULATOR,Peroxisome proliferator-activated receptor gamma modulator
+PPARG,CHEMBL1236924,MODULATOR,Peroxisome proliferator-activated receptor gamma modulator
+PPARG,CHEMBL3545278,MODULATOR,Peroxisome proliferator-activated receptor gamma modulator
+PPARG,CHEMBL3545279,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL2103824,MODULATOR,Peroxisome proliferator-activated receptor gamma modulator
+PPARG,CHEMBL329123,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL592054,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL519504,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL186179,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL282686,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL2103991,PARTIAL AGONIST,Peroxisome proliferator-activated receptor gamma partial agonist
+PPARG,CHEMBL2104753,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL1762621,ANTAGONIST,Peroxisome proliferator-activated receptor gamma antagonist
+PPARG,CHEMBL4297404,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL4297530,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL1267,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+PPARG,CHEMBL121,AGONIST,Peroxisome proliferator-activated receptor gamma agonist
+INSR,CHEMBL1201540,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201629,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201644,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201631,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201630,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201545,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201611,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201538,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201613,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201497,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201539,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201627,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201496,AGONIST,Insulin receptor agonist
+INSR,CHEMBL1201664,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2104391,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2107869,AGONIST,Insulin receptor agonist
+INSR,CHEMBL575448,INHIBITOR,Insulin receptor inhibitor
+INSR,CHEMBL5283463,INHIBITOR,Insulin receptor inhibitor
+INSR,CHEMBL1091644,INHIBITOR,Insulin receptor inhibitor
+INSR,CHEMBL2108569,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2108493,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2108968,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2108305,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2108964,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2109046,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2108973,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2108492,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2108966,AGONIST,Insulin receptor agonist
+INSR,CHEMBL2108974,AGONIST,Insulin receptor agonist
+INSR,CHEMBL4594581,AGONIST,Insulin receptor agonist
+HNF4A,CHEMBL253371,ACTIVATOR,Hepatocyte nuclear factor 4-alpha activator
+GLP1R,CHEMBL4084119,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL414357,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL2107841,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL2108027,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL2107860,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL2108724,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL2108336,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL4518483,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL4297630,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL4297576,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL4297949,ANTAGONIST,Glucagon-like peptide 1 receptor antagonist
+GLP1R,CHEMBL4650470,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL4297839,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL3990012,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL4650495,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL5314776,AGONIST,Glucagon-like peptide 1 receptor agonist
+GLP1R,CHEMBL5095485,AGONIST,Glucagon-like peptide 1 receptor agonist
+AKT2,CHEMBL4751394,INHIBITOR,Serine/threonine-protein kinase AKT2 inhibitor
+GPD2,CHEMBL1703,INHIBITOR,Mitochondrial glycerol-3-phosphate dehydrogenase inhibitor
+GIPR,CHEMBL4297839,AGONIST,Gastric inhibitory polypeptide receptor agonist
+GIPR,CHEMBL5095485,AGONIST,Gastric inhibitory polypeptide receptor agonist
+DPP4,CHEMBL227529,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL1201174,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL237500,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL1201743,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL515387,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL591118,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL2105754,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL2105762,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL142703,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL3833357,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL4296719,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL3707235,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL2147777,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL1929396,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL1779710,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL4297624,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL1082462,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL5315049,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+DPP4,CHEMBL6068334,INHIBITOR,Dipeptidyl peptidase IV inhibitor
+SLC5A2,CHEMBL4594217,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL2107830,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL2103802,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL2028665,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL2105711,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL1770248,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL1808388,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL3039507,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL429910,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL4297658,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL4297625,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL450044,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL4297431,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL2018096,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL4297452,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+SLC5A2,CHEMBL5315054,INHIBITOR,Sodium/glucose cotransporter 2 inhibitor
+HMGCR,CHEMBL503,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL1200563,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL1237061,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL2218894,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL1744447,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL690,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL393220,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL1064,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL3989923,INHIBITOR,HMG-CoA reductase inhibitor
+HMGCR,CHEMBL3989920,INHIBITOR,HMG-CoA reductase inhibitor
+PPARA,CHEMBL1201745,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL457,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL672,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL565,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL981,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL3545093,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL5314385,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL424133,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL3545394,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL219586,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL3545334,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL181954,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL3545412,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL592054,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL519504,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL186179,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL282686,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL557555,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL247951,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL4297530,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL3707395,AGONIST,Peroxisome proliferator-activated receptor alpha agonist
+PPARA,CHEMBL4297404,AGONIST,Peroxisome proliferator-activated receptor alpha agonist

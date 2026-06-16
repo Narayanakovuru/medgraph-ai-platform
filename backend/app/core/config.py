@@ -15,6 +15,13 @@ class Settings(BaseSettings):
     REDIS_HOST: str
     REDIS_PORT: int
 
+    NEO4J_URI: str
+    NEO4J_USER: str
+    NEO4J_PASSWORD: str
+
+    QDRANT_URL: str
+    QDRANT_API_KEY: str
+
     class Config:
         env_file = ".env"
 

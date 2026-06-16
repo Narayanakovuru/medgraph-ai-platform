@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   postgres:
     image: ankane/pgvector:latest
@@ -31,12 +29,97 @@ services:
       - "7687:7687" # Bolt
     environment:
       - NEO4J_AUTH=neo4j/Narayana@24
-      - NEO4J_PLUGINS=["apoc", "gds"]
+      - NEO4J_PLUGINS=["apoc"]
     volumes:
       - neo4j_data:/data
       - neo4j_import:/var/lib/neo4j/import
       - neo4j_plugins:/plugins
     restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: medgraph_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Narayana@24
+      - POSTGRES_DB=postgres
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=Narayana@24
+    depends_on:
+      - postgres
+      - redis
+      - neo4j
+    volumes:
+      - ./backend:/app
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: medgraph_frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    restart: unless-stopped
+
+  airflow-init:
+    image: apache/airflow:2.8.1
+    environment:
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:Narayana%4024@postgres:5432/postgres
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - _AIRFLOW_DB_UPGRADE=true
+      - _AIRFLOW_WWW_USER_CREATE=true
+      - _AIRFLOW_WWW_USER_USERNAME=admin
+      - _AIRFLOW_WWW_USER_PASSWORD=admin
+    depends_on:
+      - postgres
+    command: version
+
+  airflow-webserver:
+    image: apache/airflow:2.8.1
+    container_name: medgraph_airflow_web
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:Narayana%4024@postgres:5432/postgres
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - _PIP_ADDITIONAL_REQUIREMENTS=neo4j pandas
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend/dags:/opt/airflow/dags
+      - ./backend/data:/opt/airflow/data
+    command: webserver
+
+  airflow-scheduler:
+    image: apache/airflow:2.8.1
+    container_name: medgraph_airflow_scheduler
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:Narayana%4024@postgres:5432/postgres
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - _PIP_ADDITIONAL_REQUIREMENTS=neo4j pandas
+    volumes:
+      - ./backend/dags:/opt/airflow/dags
+      - ./backend/data:/opt/airflow/data
+    command: scheduler
 
 volumes:
   postgres_data:
@@ -44,3 +127,5 @@ volumes:
   neo4j_data:
   neo4j_import:
   neo4j_plugins:
+
+
