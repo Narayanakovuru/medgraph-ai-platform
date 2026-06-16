@@ -1,3 +1,46 @@
 version: "3.9"
 
 services:
+  postgres:
+    image: ankane/pgvector:latest
+    container_name: medgraph_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Narayana@24
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: medgraph_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  neo4j:
+    image: neo4j:5.12.0
+    container_name: medgraph_neo4j
+    ports:
+      - "7474:7474" # HTTP
+      - "7687:7687" # Bolt
+    environment:
+      - NEO4J_AUTH=neo4j/Narayana@24
+      - NEO4J_PLUGINS=["apoc", "gds"]
+    volumes:
+      - neo4j_data:/data
+      - neo4j_import:/var/lib/neo4j/import
+      - neo4j_plugins:/plugins
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+  neo4j_data:
+  neo4j_import:
+  neo4j_plugins:
