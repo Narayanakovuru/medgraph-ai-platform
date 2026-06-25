@@ -15,12 +15,12 @@ default_args = {
 }
 
 # The NEO4J container is accessible as "neo4j" within the docker network
-NEO4J_URI = "bolt://neo4j:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "Narayana@24"
+NEO4J_URI = os.getenv("NEO4J_URI", "bolt://neo4j:7687")
+NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "password")
 
 # The data path mapped in docker-compose.yml
-DATA_PATH = "/opt/airflow/data"
+DATA_PATH = os.getenv("DATA_PATH", "/opt/airflow/data")
 
 def check_data_files():
     """Verify that all required data files exist before running ingestion."""

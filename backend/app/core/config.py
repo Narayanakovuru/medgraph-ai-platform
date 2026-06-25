@@ -21,6 +21,16 @@ class Settings(BaseSettings):
 
     QDRANT_URL: str
     QDRANT_API_KEY: str
+    QDRANT_MODE: str
+    QDRANT_HOST: str | None = None
+    QDRANT_PORT: int | None = None
+    QDRANT_COLLECTION_NAME: str
+    QDRANT_VECTOR_SIZE: int
+    QDRANT_DISTANCE: str
+
+    EMBEDDING_MODEL_NAME: str = "dmis-lab/biobert-base-cased-v1.1"
+    EMBEDDING_DEVICE: str = "auto"
+    EMBEDDING_MAX_LENGTH: int = 512
 
     class Config:
         env_file = ".env"
