@@ -63,12 +63,30 @@ class BioBERTEmbedder:
         Convert multiple texts into embedding vectors.
 
         Uses mean pooling over token embeddings.
+
+        Raises
+        ------
+        ValueError
+            If any text in the input is empty or whitespace-only.
+            Silently filtering them out would cause a length mismatch with the
+            caller's chunk list (zip silently drops trailing items), resulting
+            in data loss without any error.
         """
 
-        clean_texts = [text.strip() for text in texts if text and text.strip()]
+        text_list = list(texts)
 
-        if not clean_texts:
+        if not text_list:
             return []
+
+        # Validate upfront so callers get a clear error instead of silent data loss.
+        empty_indices = [i for i, t in enumerate(text_list) if not t or not t.strip()]
+        if empty_indices:
+            raise ValueError(
+                f"embed_texts received empty/whitespace text at indices: {empty_indices}. "
+                "Ensure all chunks contain non-empty text before embedding."
+            )
+
+        clean_texts = [t.strip() for t in text_list]
 
         encoded_input = self.tokenizer(
             clean_texts,

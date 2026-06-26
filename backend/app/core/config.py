@@ -32,6 +32,13 @@ class Settings(BaseSettings):
     EMBEDDING_DEVICE: str = "auto"
     EMBEDDING_MAX_LENGTH: int = 512
 
+    RAG_CHUNK_SIZE: int = 800
+    RAG_CHUNK_OVERLAP: int = 150
+    RAG_BATCH_SIZE: int = 8
+    RAG_INDEX_LIMIT: int = 20
+
+    PUBMED_ABSTRACTS_PATH: str = "data/pubmed/diabetes_abstracts.txt"
+    
     class Config:
         env_file = ".env"
 
