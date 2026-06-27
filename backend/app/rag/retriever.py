@@ -8,6 +8,9 @@ from app.rag.embeddings import get_embedder
 def retrieve_relevant_chunks(query: str, limit: int = 5) -> List[dict[str, Any]]:
     """
     Retrieve semantically relevant chunks from Qdrant for a user query.
+
+    Uses client.query_points() which is the current API in qdrant-client >= 1.13.
+    (client.search() was removed in v1.13.)
     """
 
     if not query.strip():
@@ -18,17 +21,17 @@ def retrieve_relevant_chunks(query: str, limit: int = 5) -> List[dict[str, Any]]
 
     query_vector = embedder.embed_text(query)
 
-    results = client.search(
+    response = client.query_points(
         collection_name=settings.QDRANT_COLLECTION_NAME,
-        query_vector=query_vector,
+        query=query_vector,
         limit=limit,
         with_payload=True,
     )
 
     return [
         {
-            "score": result.score,
-            "payload": result.payload,
+            "score": point.score,
+            "payload": point.payload,
         }
-        for result in results
+        for point in response.points
     ]
